@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 9999;
+}
+
+nav .logo
+{
+	width: 80px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+}
+/*------------- Navigation style end ------------*/
+
+
+
+/*------------- Home section styling start --------------*/
+#home {
+    padding: 150px 8vw 60px; /* AUMENTEI o padding-top para não encostar no menu */
+    text-align: center;
+}
+
+#home h2 {
+    color: #001f3f;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* Botão Continuar Aprendendo */
+.continue-box {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.continue-btn {
+    background: #1e3c72;
+    color: white;
+    padding: 14px 35px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.continue-btn:hover {
+    background: #2a5298;
+    transform: translateY(-3px);
+}
+
+/*------------- Home section styling end --------------*/
+
+
+/* -------- Video section -------- */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+}
+/* -------- Video section -------- */
+
+/* ===== Estilo exclusivo da página de aprendizado ===== */
+
+.learning-section .media-box {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* alinhamento ao topo */
+    margin-top: 40px;
+    flex-wrap: nowrap;       /* não deixa quebrar para linha de baixo */
+}
+
+/* VIDEO 50% menor, arredondado e com sombra */
+.learning-section .video-left video {
+    width: 50%; /* exatamente 50% do tamanho original */
+    min-width: 260px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Caixa da direita (texto, áudio e botão) */
+.learning-section .text-audio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 350px;
+}
+
+/* Texto */
+.learning-section .text-audio-box p {
+    color: #001f3f;
+    font-size: 1.1rem;
+}
+
+/* Áudio */
+.learning-section .text-audio-box audio {
+    width: 100%;
+}
+
+/* Botão dentro do bloco da direita */
+.learning-section .text-audio-box .continue-btn.inside {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #083b74;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    transition: .3s;
+}
+
+.learning-section .text-audio-box .continue-btn.inside:hover {
+    background-color: #062d56;
+}
+
+.image-left img {
+    width: 100%;       /* ocupa todo o espaço do container da esquerda */
+    max-width: 350px;  /* limita o tamanho da imagem */
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.audio-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px; /* evita que o conteúdo seja maior que a área disponível */
+}
+
+
+
+/*------------- Quiz section styling start ------------*/
+
+/* Fundo colorido da página inteira do quiz */
+.quiz-page {
+    min-height: calc(100vh - 250px); /* desconta o menu + espaço pro footer */
+    padding: 160px 20px 80px;
+    background: linear-gradient(135deg, #1a2a6c, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* antes era o vilão */
+}
+
+
+
+/* Card do quiz */
+.quiz-box {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border: 2px solid #dbe4f0;
+}
+
+/* Perguntas */
+.question {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #1e3c72;
+}
+
+/* Botões */
+.quiz-box button {
+    padding: 12px 25px;
+    cursor: pointer;
+    background: #1e3c72;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.quiz-box button:hover {
+    background: #2a5298;
+}
+
+/* Resultado */
+#result {
+    font-size: 22px;
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e3c72;
+}
+/*------------- Quiz section styling end ------------*/
+
+
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 2vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 40px;
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+}
+/*------------- Footer section styling ends ------------*/

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Multimídias - Aprendizado 2</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation start -->
+    <nav>
+        <img src="img/logo_take.png" class="logo" alt="">
+
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aprendizado-1.html">Aprendizado</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation ends -->
+
+
+    <!-- SECTION PRINCIPAL -->
+    <section id="home" class="learning-section">
+
+        <h2>Imagens Vetoriais x Imagens Matriciais</h2>
+
+
+        <!-- BLOCO 1 – IMAGEM VETORIAL -->
+        <div class="media-box">
+
+            <!-- IMAGEM À ESQUERDA -->
+            <div class="image-left">
+                <img src="img/coca_vetorizado.png" alt="Exemplo de imagem vetorial">
+            </div>
+
+            <!-- TEXTO + ÁUDIO À DIREITA -->
+            <div class="audio-right">
+                <p>
+                    Ouça a explicação complementar sobre imagens vetorizadas:
+                </p>
+
+                <audio controls>
+                    <source src="audios/vetorizadas.mp3" type="audio/mp3">
+                    Seu navegador não suporta áudio.
+                </audio>
+            </div>
+        </div>
+
+
+
+        <!-- BLOCO 2 – IMAGEM MATRICIAL -->
+        <div class="media-box">
+
+            <!-- IMAGEM À ESQUERDA -->
+            <div class="image-left">
+                <img src="img/coca_matricial.png" alt="Exemplo de imagem matricial">
+            </div>
+
+            <!-- TEXTO + ÁUDIO À DIREITA -->
+            <div class="audio-right">
+                <p>
+                    Ouça a explicação complementar sobre imagens matriciais:
+                </p>
+
+                <audio controls>
+                    <source src="audios/matriciais.mp3" type="audio/mp3">
+                    Seu navegador não suporta áudio.
+                </audio>
+            </div>
+        </div>
+
+
+        <!-- BOTÃO FINAL – IR PARA O QUIZ -->
+        <div class="continue-box">
+            <a href="quiz.html" class="continue-btn">Ir para o Quiz</a>
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-col">
+            <h3>About us</h3>
+            <li>Felipe Alves 01593732</li>
+            <li>Jessica Nascimento 01717533</li>
+            <li>Ravi Leal 24010140</li>
+            <li>Rayane Silva 01203448</li>
+            <li>Victor Oliveira 24007940</li>
+            <li>Victor Emery 01365615</li>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+</body>
+
+</html>

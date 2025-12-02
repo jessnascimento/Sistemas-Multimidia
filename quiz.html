@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <img src="img/logo_take.png" class="logo" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aprendizado-1.html">Aprendizado</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PÁGINA DO QUIZ -->
+    <section class="quiz-page">
+        <div class="quiz-box">
+            <h2>Quiz Interativo</h2>
+            <button id="startQuiz">Iniciar Quiz</button>
+            <div id="quizArea" style="display:none;"></div>
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER FIXO EM TODAS AS PÁGINAS -->
+    <footer>
+        <div class="footer-col">
+            <h3>About us</h3>
+            <li>Felipe Alves 01593732</li>
+            <li>Jessica Nascimento 01717533</li>
+            <li>Ravi Leal 24010140</li>
+            <li>Rayane Silva 01203448</li>
+            <li>Victor Oliveira 24007940</li>
+            <li>Victor Emery 01365615</li>
+        </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>

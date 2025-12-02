@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sistemas Multimidias</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- Link com o css da página principal -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo_take.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="aprendizado-1.html">Aprendizado</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Section starts from here -->
+<section id="home" class="learning-section">
+
+    <h2>Aprenda sobre configuração de câmeras</h2>
+
+    <div class="media-box">
+
+        <!-- VIDEO À ESQUERDA -->
+        <div class="video-left">
+            <video controls>
+                <source src="videos/configuracao_camera.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de video.
+            </video>
+        </div>
+
+        <!-- ÁUDIO + TEXTO + BOTÃO À DIREITA -->
+        <div class="text-audio-box">
+
+            <p>Ouça a explicação complementar sobre configurações de câmera:</p>
+
+            <audio controls>
+                <source src="audios/configuracao_camera.mp3" type="audio/mp3">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+
+            <a href="aprendizado-2.html" class="continue-btn inside">Continuar Aprendendo</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+	<!-- Home section ends from here -->
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>About us</h3>
+			<li>Felipe Alves 01593732</li>
+			<li>Jessica Nascimento 01717533</li>
+			<li>Ravi Leal 24010140</li>
+			<li>Rayane Silva 01203448</li>
+			<li>Victor Oliveira 24007940</li>
+			<li>Victor Emery 01365615</li>
+		</div>
+
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function () {
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function () {
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+
+</html>
